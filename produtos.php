@@ -1,5 +1,5 @@
 <?php
-// livros.php
+
 
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
@@ -16,7 +16,6 @@ if ($search !== '') {
         return strpos(mb_strtolower($livro['nome'], 'UTF-8'), $search) !== false;
     });
 
-    // Reindexa o array
     $livros = array_values($livros);
 }
 

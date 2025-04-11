@@ -7,5 +7,5 @@ COPY . /var/www/html/
 # Dá permissão de leitura ao Apache (se necessário)
 RUN chown -R www-data:www-data /var/www/html
 
-# Expor porta 80 (opcional, Render cuida disso)
+# Expor porta 80 
 EXPOSE 80
